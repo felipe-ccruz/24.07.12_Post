@@ -8,7 +8,7 @@ public class Comment {
 
     @Override
     public String toString() {
-        return "Comment [text=" + text + "]";
+        return "\n          ----Comment [text=" + text + "]\n";
     }
 
 

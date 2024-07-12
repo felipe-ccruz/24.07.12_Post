@@ -20,12 +20,16 @@ public class Post {
         addComment(c);
     }
 
+    public void likeThePost(){
+        setLikes(getLikes() + 1);
+    }
+
     @Override
     public String toString() {
-        return "Post [date=" + date + ", title=" + title + ", content=" + content + ", likes=" + likes + ", comments="
+        return "\nPost [\n   date=" + date + ", \n   title=" + title + ", \n   content=" + content + ", \n   likes=" + likes + ", \n   comments="
                 + comments + "]";
     }
-    
+
     //GETTER & SETTER
     public LocalDateTime getDate() {
         return date;
