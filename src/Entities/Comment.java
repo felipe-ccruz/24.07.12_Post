@@ -6,8 +6,12 @@ public class Comment {
         this.text = text;
     }
 
-    
-    
+    @Override
+    public String toString() {
+        return "Comment [text=" + text + "]";
+    }
+
+
     public String getText() {
         return text;
     }

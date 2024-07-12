@@ -15,9 +15,17 @@ public class Post {
         this.content = content;
     }
     //MOTODS
+    public void writeComment(String text){
+        Comment c = new Comment(text);
+        addComment(c);
+    }
+
+    @Override
+    public String toString() {
+        return "Post [date=" + date + ", title=" + title + ", content=" + content + ", likes=" + likes + ", comments="
+                + comments + "]";
+    }
     
-
-
     //GETTER & SETTER
     public LocalDateTime getDate() {
         return date;
